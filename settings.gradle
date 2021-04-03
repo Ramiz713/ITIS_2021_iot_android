@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "IOT-ITIS-2021-FRONT"
