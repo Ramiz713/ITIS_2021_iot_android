@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="col_sensor_background">#80FFFFFF</color>
+    <color name="col_sensor_text">@color/black</color>
+
+    <color name="col_gray">#c1d5e0</color>
+    <color name="col_green">#80e27e</color>
+    <color name="col_yellow">#ffff72</color>
+    <color name="col_orange">#ff9800</color>
+    <color name="col_red">#ef5350</color>
+
 </resources>

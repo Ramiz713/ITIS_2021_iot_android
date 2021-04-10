@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">IOT-ITIS-2021-FRONT</string>
+    <string name="app_name">Концентрация CO2</string>
+    <string name="server_connection">Установить соединение</string>
+    <string name="status_title">Статус:</string>
+    <string name="status_idle">Соединение не установлено. Нажмите на кнопку, чтобы начать получение данных</string>
+    <string name="status_loading">Идет установка соединения с сервером…</string>
+    <string name="status_success">Соединение установлено</string>
+    <string name="status_error">Не получилось установить соединение с сервером &#128577;. Нажмите на кнопку, чтобы попробовать еще раз.</string>
+    <string name="concentration_title">Концентрация CO2:</string>
+    <string name="concentration_value">%1$d\nppm</string>
+    <string name="concentration_no_value">Нет данных</string>
+    <string name="concentration_update_time">Время обновления</string>
 </resources>

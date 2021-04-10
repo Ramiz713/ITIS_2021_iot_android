@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/view_concentration_card_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/concentration_title"
+        android:textColor="@color/col_sensor_text"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/view_concentration_card_value_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/concentration_value"
+        android:textColor="@color/col_sensor_text"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/view_concentration_card_time_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/concentration_update_time"
+        android:textColor="@color/col_sensor_text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/view_concentration_card_value_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/view_concentration_card_time_value_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/col_sensor_text"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/view_concentration_card_value_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="10 апреля 20:11" />
+
+</LinearLayout>
