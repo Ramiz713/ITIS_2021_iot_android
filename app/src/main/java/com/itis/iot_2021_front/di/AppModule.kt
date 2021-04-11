@@ -12,7 +12,7 @@ import org.koin.dsl.module.module
 
 val appModule = module {
 
-    single<IWebServicesProvider> { WebServicesProvider("ws://iot-sensor.herokuapp.com/carbon-dioxide") }
+    single<IWebServicesProvider> { WebServicesProvider("wss://iot-detector.herokuapp.com/carbon-dioxide") }
     single<IMainRepository> { MainRepository(get()) }
     single<IMainInteractor> { MainInteractor(get()) }
 

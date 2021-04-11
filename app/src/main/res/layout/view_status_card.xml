@@ -32,6 +32,7 @@
         android:id="@+id/view_status_card_btn"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="wrap_content"
+        app:strokeColor="@color/purple_500"
         android:layout_height="wrap_content"
         android:gravity="start"
         android:padding="16dp"
@@ -43,10 +44,12 @@
     <com.google.android.material.progressindicator.CircularProgressIndicator
         android:id="@+id/view_status_card_pb"
         style="@style/Widget.MaterialComponents.CircularProgressIndicator"
-        android:layout_width="12dp"
-        android:layout_height="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:indeterminate="true"
         android:visibility="gone"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
         app:indicatorColor="@color/purple_500" />
 
 </LinearLayout>

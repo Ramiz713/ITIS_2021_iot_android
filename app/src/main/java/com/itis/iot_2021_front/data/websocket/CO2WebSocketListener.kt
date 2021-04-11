@@ -1,5 +1,6 @@
 package com.itis.iot_2021_front.data.websocket
 
+import android.util.Log
 import com.itis.iot_2021_front.data.websocket.WebServicesProvider.Companion.NORMAL_CLOSURE_STATUS
 import com.itis.iot_2021_front.model.SocketAbortedException
 import com.itis.iot_2021_front.model.SocketUpdate
@@ -10,6 +11,7 @@ import okhttp3.Response
 import okhttp3.WebSocket
 import okhttp3.WebSocketListener
 import okio.ByteString
+import org.json.JSONObject
 
 class CO2WebSocketListener : WebSocketListener() {
 
@@ -20,7 +22,9 @@ class CO2WebSocketListener : WebSocketListener() {
 
     override fun onMessage(webSocket: WebSocket, text: String) {
         GlobalScope.launch {
-            socketEventChannel.send(SocketUpdate(text))
+            val json = JSONObject(text)
+            val socketUpdate = SocketUpdate(json.optInt("eco2"), json.optInt("tvoc"))
+            socketEventChannel.send(socketUpdate)
         }
     }
 

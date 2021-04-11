@@ -7,7 +7,7 @@ import com.itis.iot_2021_front.model.UiState
 sealed class MainViewState : UiState {
     object Idle : MainViewState()
     object Loading : MainViewState()
-    data class Success(val concentration: Int) : MainViewState()
+    data class Success(val concentration: Int, val tvoc: Int) : MainViewState()
     object Error : MainViewState()
 }
 

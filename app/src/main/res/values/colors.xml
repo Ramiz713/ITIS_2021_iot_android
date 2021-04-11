@@ -11,9 +11,10 @@
     <color name="col_sensor_text">@color/black</color>
 
     <color name="col_gray">#c1d5e0</color>
-    <color name="col_green">#80e27e</color>
-    <color name="col_yellow">#ffff72</color>
-    <color name="col_orange">#ff9800</color>
+    <color name="col_light_green">#98ee99</color>
+    <color name="col_green">#d4e157</color>
+    <color name="col_yellow">#ffeb3b</color>
+    <color name="col_orange">#ff7043</color>
     <color name="col_red">#ef5350</color>
 
 </resources>

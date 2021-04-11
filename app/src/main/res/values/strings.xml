@@ -7,7 +7,16 @@
     <string name="status_success">Соединение установлено</string>
     <string name="status_error">Не получилось установить соединение с сервером &#128577;. Нажмите на кнопку, чтобы попробовать еще раз.</string>
     <string name="concentration_title">Концентрация CO2:</string>
-    <string name="concentration_value">%1$d\nppm</string>
+    <string name="concentration_value">%1$s\nppm</string>
+    <string name="concentration_tvoc_title">Показатель TVOC\n(Летучие органические вещества):</string>
+    <string name="concentration_tvoc_value">%1$s\nppb</string>
     <string name="concentration_no_value">Нет данных</string>
-    <string name="concentration_update_time">Время обновления</string>
+    <string name="concentration_update_time">Время обновления:</string>
+    <string name="concentration_air_title">Дополнительная информация:</string>
+    <string name="concentration_air_high_quality"><b>Воздух высокого качества</b> - идеальное самочувствие и бодрость, норма на улице</string>
+    <string name="concentration_air_medium_quality"><b>Воздух среднего качества</b> - норма в помещении</string>
+    <string name="concentration_air_high_medium_quality"><b>Нижняя граница допустимой нормы</b> - при таком качестве воздуха каждый второй ощущает духоту, вялость, снижение концентрации, головную боль</string>
+    <string name="concentration_air_low_quality"><b>Воздух низкого качества</b> - вероятны возникновение вялости, проблемы с внимательностью и обработкой информации, тяжелое дыхание, проблемы с носоглоткой</string>
+    <string name="concentration_air_lowes_quality"><b>Воздух низкого качества</b> - вероятны возникновение cильной усталости, безынициативности, неспособности сосредоточиться, сухости слизистых, проблем со сном</string>
+
 </resources>

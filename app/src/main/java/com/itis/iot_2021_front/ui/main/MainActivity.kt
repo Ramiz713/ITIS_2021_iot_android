@@ -45,9 +45,10 @@ class MainActivity : AppCompatActivity() {
         when (state) {
             is MainViewState.Success -> {
                 when (state.concentration) {
-                    in 0..400 -> R.color.col_green
-                    in 400..1000 -> R.color.col_yellow
-                    in 1000..5000 -> R.color.col_orange
+                    in 0..699 -> R.color.col_light_green
+                    in 700..999 -> R.color.col_green
+                    in 1000..1499 -> R.color.col_yellow
+                    in 1500..1999 -> R.color.col_orange
                     else -> R.color.col_red
                 }
             }

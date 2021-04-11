@@ -46,6 +46,6 @@ class WebServicesProvider(private val webSocketUrl: String) : IWebServicesProvid
             Request.Builder().url(webSocketUrl).build(),
             webSocketListener
         )
-        socketOkHttpClient.dispatcher.executorService.shutdown()
+        socketOkHttpClient.connectionPool.evictAll()
     }
 }
