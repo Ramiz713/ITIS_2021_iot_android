@@ -59,5 +59,4 @@ class MainActivity : AppCompatActivity() {
     private fun onViewEffect(effect: MainEffect) {
         //TODO обработка эффектов
     }
-
 }
