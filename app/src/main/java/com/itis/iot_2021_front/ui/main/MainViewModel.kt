@@ -21,12 +21,13 @@ class MainViewModel(private val repository: IMainRepository) :
             try {
                 setState { MainViewState.Loading }
                 while (isActive) {
-                    val data = repository.getAirSensorData()
+                    val data = repository.getMockAirSensorData()
                     setState { MainViewState.Success(data.eco2, data.tvoc) }
                     delay(500L)
                 }
             } catch (ex: Exception) {
                 setState { MainViewState.Error }
+                setEffect { MainEffect.ErrorMessage(ex.localizedMessage) }
             }
         }
     }

@@ -7,7 +7,6 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Build
 import android.view.View
-import android.view.ViewGroup
 import android.view.WindowManager
 import androidx.annotation.ColorRes
 import androidx.core.content.ContextCompat
@@ -24,12 +23,6 @@ fun Activity.makeStatusBarTransparent() {
         }
         statusBarColor = Color.TRANSPARENT
     }
-}
-
-fun View.setMarginTop(marginTop: Int) {
-    val menuLayoutParams = this.layoutParams as ViewGroup.MarginLayoutParams
-    menuLayoutParams.setMargins(0, marginTop, 0, 0)
-    this.layoutParams = menuLayoutParams
 }
 
 fun View.colorTransition(@ColorRes endColor: Int, duration: Long = 300L) {

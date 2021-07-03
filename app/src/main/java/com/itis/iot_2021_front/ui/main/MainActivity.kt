@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.itis.iot_2021_front.R
 import androidx.lifecycle.lifecycleScope
+import com.google.android.material.snackbar.Snackbar
 import com.itis.iot_2021_front.databinding.ActivityMainBinding
 import com.itis.iot_2021_front.ext.colorTransition
 import com.itis.iot_2021_front.ext.makeStatusBarTransparent
@@ -56,7 +57,8 @@ class MainActivity : AppCompatActivity() {
         }.also { viewBinding.actMainLl.colorTransition(it) }
     }
 
-    private fun onViewEffect(effect: MainEffect) {
-        //TODO обработка эффектов
+    private fun onViewEffect(effect: MainEffect) = when (effect) {
+        is MainEffect.ErrorMessage -> Snackbar
+            .make(viewBinding.root, effect.message, Snackbar.LENGTH_SHORT).show()
     }
 }

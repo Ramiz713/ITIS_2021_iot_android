@@ -16,5 +16,5 @@ sealed class MainEvent : UiEvent {
 }
 
 sealed class MainEffect : UiEffect {
-    object ErrorMessage : MainEffect()
+    data class ErrorMessage(val message: String) : MainEffect()
 }
